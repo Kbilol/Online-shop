@@ -12,7 +12,7 @@ export const configLink = {
         },
         {
             name:'Товары',
-            link:'/products'
+            link:'/product'
         },
         {
             name:'Скидка',
@@ -20,7 +20,7 @@ export const configLink = {
         },
         {
             name:'Контакты',
-            link:'/contacts'
+            link:'/contact'
         }
     ]
 }
