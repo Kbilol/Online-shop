@@ -1,5 +1,5 @@
 import { Logo } from "../../common/ui/Logo"
-import { NavbarApp } from "../../common/ui/widgets/Navbar"
+
 
 
 
@@ -7,10 +7,9 @@ import { NavbarApp } from "../../common/ui/widgets/Navbar"
   
 
   return (
-   <main> 
-   
-    <NavbarApp/>
-    <Logo/>
-   </main>
+    <section>
+      <h1>Home</h1>
+      <Logo/>
+    </section>
   )
 }
