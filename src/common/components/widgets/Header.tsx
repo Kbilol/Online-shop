@@ -1,4 +1,5 @@
-import { Intro } from "./intro"
+
+import { Intro } from "./Intro"
 import { NavbarApp } from "./Navbar"
 
 export const Header:React.FC = () => {
