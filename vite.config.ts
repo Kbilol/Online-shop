@@ -14,6 +14,12 @@ export default defineConfig({
       '@core': fileURLToPath(new URL('./src/core', import.meta.url)),
       '@common': fileURLToPath(new URL('./src/common', import.meta.url)),
       '@app': fileURLToPath(new URL('./src/app', import.meta.url)),
+      
+      "@auth": fileURLToPath(new URL("./src/modules/auth", import.meta.url)),
+      "@basket": fileURLToPath(new URL("./src/modules/basket", import.meta.url)),
+      "@product": fileURLToPath(new URL("./src/modules/product", import.meta.url)),
+      "@category": fileURLToPath(new URL("./src/modules/category", import.meta.url)),
+      "@user": fileURLToPath(new URL("./src/modules/user", import.meta.url)),
     }
   }
 })
