@@ -10,3 +10,6 @@ export const Header:React.FC = () => {
         </header>
     )
 }
+
+
+// спасибо -> спс 
