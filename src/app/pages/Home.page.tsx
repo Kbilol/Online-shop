@@ -1,4 +1,4 @@
-import { Logo } from "../../common/ui/Logo"
+import { Logo } from "../../common/Component/Logo"
 
 
 

@@ -5,8 +5,9 @@ import About from "../pages/About.page";
 
 import Product from "../pages/Product.page";
 import Contact from "../pages/Contact.page";
+
+import { Layout } from "../../common/Component/widgets/Layout";
 import Discount from "../pages/Discount.page";
-import { Layout } from "../../common/ui/widgets/Layout";
 
 
 
