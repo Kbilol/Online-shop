@@ -1,13 +1,14 @@
 import { createBrowserRouter } from "react-router-dom";
-import Home from "../pages/Home.page";
-import About from "../pages/About.page";
+import Home from "@app/pages/Home.page";
+import About from "@app/pages/About.page";
 
 
-import Product from "../pages/Product.page";
-import Contact from "../pages/Contact.page";
+import Product from "@app/pages/Product.page";
+import Contact from "@app/pages/Contact.page";
 
-import { Layout } from "../../common/Component/widgets/Layout";
-import Discount from "../pages/Discount.page";
+
+import Discount from "@app/pages/Discount.page";
+import { Layout } from "@common/components/widgets/Layout";
 
 
 
