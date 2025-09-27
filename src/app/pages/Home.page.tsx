@@ -1,4 +1,6 @@
-import { Logo } from "../../common/Component/Logo"
+import { Logo } from "../../common/components/Logo"
+import { ProductTape } from "../../common/core/modules/product"
+import Product from "./Product.page"
 
 
 
@@ -10,6 +12,7 @@ import { Logo } from "../../common/Component/Logo"
     <section>
       <h1>Home</h1>
       <Logo/>
+      <ProductTape/>
     </section>
   )
 }

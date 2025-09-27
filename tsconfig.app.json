@@ -23,5 +23,25 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
+
+  "baseUrl":".",
+  "paths":{
+    "@/*":["src/*"],
+    "@app/*":["src/app/*"],
+    "@common/*":["src/common/*"],
+    "@core/*":["src/core/*"],
+
+    "auth/*":["src/modules/auth/*"],
+    "basket/*":["src/modules/basket/*"],
+    "product/*":["src/modules/product/*"],
+    "category/*":["src/modules/category/*"],
+    "user/*":["src/modules/user/*"],
+
+
+  },
+  
+
+
+
   "include": ["src"]
 }
