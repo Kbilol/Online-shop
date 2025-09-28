@@ -1,10 +1,11 @@
 
 
-import { title } from "process";
-import type {ProductEntity} from "./product.entity";
+
+import type { ProductEntity } from "../product.entity";
 
 
-export const products:ProductEntity[] = [
+
+export const products: ProductEntity[] = [
     {
         id:1,
         title:'Кофе',
