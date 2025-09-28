@@ -1,6 +1,6 @@
 import { Logo } from "../../common/components/Logo"
 import { ProductTape } from "../../common/core/modules/product"
-import Product from "./Product.page"
+
 
 
 
