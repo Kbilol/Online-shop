@@ -1,10 +1,15 @@
-import type { ProductEntity } from "../../product.entity";
+import { Link } from "react-router-dom";
+import type { ProductEntity } from "../product.entity";
+
 
 interface IProductCardProps {
   product: ProductEntity;
 }
 
 export const ProductCard: React.FC<IProductCardProps> = ({ product }) => {
+  const urlBuy = `/product/${product.id}/buy`;
+  const urlDetails = `/product/${product.id}/details`;
+
   return (
     <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition transform hover:-translate-y-1 w-72">
       <img
@@ -24,6 +29,11 @@ export const ProductCard: React.FC<IProductCardProps> = ({ product }) => {
           <span className="text-yellow-500 text-sm">⭐ {product.rating}</span>
         </div>
       </div>
+      <div>
+    <Link to = {urlBuy} >Купить</Link>
+    <Link to = {urlDetails}>Подробней</Link>
+      </div>
+      
     </div>
   );
 };
