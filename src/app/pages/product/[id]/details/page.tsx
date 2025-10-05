@@ -1,20 +1,20 @@
 import { useParams } from "react-router-dom";
 import { products } from "../../../../../modules/product/data/product.data";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import type { ProductEntity } from "../../../../../modules/product/product.entity";
 
 export default function ProductDetails() {
   const { id } = useParams();
   const [product, setProduct] = useState<ProductEntity | null>(null);
 
-  function findProduct(): ProductEntity | null {
-    return products.find((product) => product.id === Number(id)) || null;
-  }
+  const findProduct = useCallback((id:number) =>  {
+    return products.find((product) => product.id === id) || null;
+  },[])
 
   useEffect(() => {
-    const foundProduct = findProduct();
+    const foundProduct = findProduct(Number(id));
     setProduct(foundProduct);
-  }, [id]);
+  }, [findProduct,id]);
 
   if (!product) {
     return (
