@@ -12,7 +12,8 @@ import ProductDetails from "../pages/product/[id]/details/page";
 import About from "../pages/about/page";
 import Discount from "../pages/discount/page";
 import Contact from "../pages/contact/page";
-import { Layout } from "@common/widgets/Layout";
+import { Layout } from "../../common/widgets/Layout";
+
 
 
 

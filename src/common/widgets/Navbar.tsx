@@ -1,5 +1,6 @@
 import { Button, Navbar, NavbarBrand, NavbarCollapse, NavbarLink, NavbarToggle } from "flowbite-react";
-import { configLink } from "@core/config.core";
+import { configLink } from "../../core/config.core";
+
 
 
 
