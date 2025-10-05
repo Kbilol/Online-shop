@@ -9,6 +9,7 @@ lerna-debug.log*
 bun.lock
 package-lock.json
 
+dist
 node_modules
 dist
 dist-ssr

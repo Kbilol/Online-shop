@@ -1,13 +1,19 @@
 import { createBrowserRouter } from "react-router-dom";
-import Home from "../pages/Home.page";
-import About from "../pages/About.page";
+import Home from "../pages/page";
 
 
-import Product from "../pages/Product.page";
-import Contact from "../pages/Contact.page";
 
-import { Layout } from "../../common/components/widgets/Layout";
-import Discount from "../pages/Discount.page";
+
+
+
+
+import ProductBuy from "../pages/product/[id]/buy/page";
+import ProductDetails from "../pages/product/[id]/details/page";
+import About from "../pages/about/page";
+import Discount from "../pages/discount/page";
+import Contact from "../pages/contact/page";
+import { Layout } from "../../common/widgets/Layout";
+
 
 
 
@@ -26,10 +32,6 @@ export const router = createBrowserRouter([
         Component: About,
       },
       {
-        path: "/product",
-        Component: Product,
-      },
-      {
         path: "/discount",
         Component: Discount,
       },
@@ -37,6 +39,14 @@ export const router = createBrowserRouter([
         path: "/contact",
         Component: Contact,
       },
+      {
+        path:"/product/:id/buy",
+        Component: ProductBuy,
+      },
+      {
+        path:"/product/:id/details",
+        Component: ProductDetails,
+      }
     ]
   },
   
