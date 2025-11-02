@@ -5,8 +5,8 @@ import { ProductCard } from "../ui/ProductCard"
 export const ProductTape: React.FC = () => {
     return(
         <section>
-            <h1>ProductTape</h1>
-
+            
+        
 
             {
                 products.map(

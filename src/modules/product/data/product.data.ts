@@ -1,7 +1,7 @@
 
 
 
-import type { ProductEntity } from "../product.entity";
+import type { ProductEntity } from "../entity/product.entity";
 
 
 

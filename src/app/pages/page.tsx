@@ -1,5 +1,6 @@
 
-import { ProductTape } from "../../modules/product"
+import { Intro } from "@common/widgets/Intro"
+import { ProductTape } from "@product/index"
 
 
 
@@ -10,7 +11,7 @@ export default function Home() {
 
   return (
     <section>
-      <h1>Home</h1>
+      <Intro/>
       <ProductTape/>
     </section>
   )

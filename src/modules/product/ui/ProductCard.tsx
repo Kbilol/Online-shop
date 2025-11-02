@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import type { ProductEntity } from "../product.entity";
+import type { ProductEntity } from "../entity/product.entity";
 
 
 interface IProductCardProps {
