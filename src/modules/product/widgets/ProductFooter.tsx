@@ -5,6 +5,10 @@ interface IProductImgProps{
 }
 
 export const ProductFooter:React.FC<IProductImgProps> = ({product}) => {
+
+
+    console.log(product)
+
     return(
 
           
