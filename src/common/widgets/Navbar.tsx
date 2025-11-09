@@ -1,5 +1,6 @@
-import { Button, Navbar, NavbarBrand, NavbarCollapse, NavbarLink, NavbarToggle } from "flowbite-react";
+import { Button, Navbar, NavbarBrand, NavbarCollapse, NavbarToggle } from "flowbite-react";
 import { configLink } from "@core/config.core";
+import { Link } from "@common/ui/Link";
 
 
 
@@ -9,7 +10,7 @@ import { configLink } from "@core/config.core";
 export const NavbarApp:React.FC = () => {
   const navbarLins = () =>{
       return configLink.navBar.map((item,index) => {
-        return <NavbarLink key={index} href={item.link}>{item.name}</NavbarLink>
+        return <Link variant="primary" key={index} to={item.link}>{item.name}</Link>
       })
 
   }

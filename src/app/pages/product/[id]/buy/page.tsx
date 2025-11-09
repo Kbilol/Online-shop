@@ -1,3 +1,4 @@
+import { Button } from "@common/ui/Button";
 
 
 
@@ -13,12 +14,12 @@ export default function ProductBuy({ price = 0 }: Props) {
       <p className="text-2xl font-bold text-green-600">${price}</p>
 
       <div className="flex flex-col gap-2">
-        <button className="w-40 bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 rounded-lg transition">
+        <Button variant="primary">
           Купить сейчас
-        </button>
-        <button className="w-40 bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-medium py-2 rounded-lg transition">
+        </Button>
+        <Button variant="warning">
           В корзину
-        </button>
+        </Button>
       </div>
 
       <div className="text-sm text-gray-500 space-y-1 text-center">
