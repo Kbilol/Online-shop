@@ -1,3 +1,4 @@
+import { Button } from "@common/ui/Button";
 
 export const Intro: React.FC = () => {
   return (
@@ -20,9 +21,9 @@ export const Intro: React.FC = () => {
           поэтому мы заботимся о том, чтобы ваши покупки были лёгкими и приятными.
         </p>
         
-        <button className="px-6 py-3 bg-pink-400 text-white rounded-xl shadow-md hover:bg-pink-500 hover:shadow-lg transition-all duration-300">
+        <Button variant="fourth">
           Перейти к покупкам
-        </button>
+        </Button>
       </div>
     </section>
   );
