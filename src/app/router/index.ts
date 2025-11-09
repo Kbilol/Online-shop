@@ -13,6 +13,7 @@ import About from "../pages/about/page";
 import Discount from "../pages/discount/page";
 import Contact from "../pages/contact/page";
 import { Layout } from "@common/widgets/Layout";
+import ProductPage from "@app/pages/product/[id]/page";
 
 
 
@@ -42,6 +43,10 @@ export const router = createBrowserRouter([
       {
         path:"/product/:id/buy",
         Component: ProductBuy,
+      },
+      {
+        path:"/product",
+        Component:ProductPage,
       },
       {
         path:"/product/:id/details",
