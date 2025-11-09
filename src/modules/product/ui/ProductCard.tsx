@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+
+import { Link } from "@common/ui/Link";
 import type { ProductEntity } from "../entity/product.entity";
 
 
@@ -29,9 +30,9 @@ export const ProductCard: React.FC<IProductCardProps> = ({ product }) => {
           <span className="text-yellow-500 text-sm">⭐ {product.rating}</span>
         </div>
       </div>
-      <div>
-    <Link to = {urlBuy} >Купить</Link>
-    <Link to = {urlDetails}>Подробней</Link>
+      <div className="flex justify-center items-center gap-3 p-3">
+    <Link variant="second" to = {urlBuy} >Купить</Link>
+    <Link variant="fourth" to = {urlDetails}>Подробней</Link>
       </div>
       
     </div>
