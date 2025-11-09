@@ -11,7 +11,7 @@ export const ProductCard: React.FC<IProductCardProps> = ({ product }) => {
   const urlDetails = `/product/${product.id}/details`;
 
   return (
-    <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition transform hover:-translate-y-1 w-72">
+    <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
       <img
         src={product.image}
         alt={product.title}
