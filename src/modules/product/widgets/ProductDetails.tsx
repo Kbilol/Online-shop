@@ -26,16 +26,16 @@ export const ProductDetails: React.FC<IProductDetailsProms> = ({id}) => {
       </div>
     );
   }
-    return(
-        <section className="bg-gray-50 min-h-screen py-12 px-4">
-      <div className="max-w-5xl mx-auto bg-white shadow-lg rounded-2xl overflow-hidden grid grid-cols-1 md:grid-cols-2">
+  
+  return(
+    <section className="min-h-screen py-12 px-4 flex items-center justify-center">
+      <div className="max-w-5xl mx-auto flex bg-white shadow-lg rounded-2xl overflow-hidden grid grid-cols-1 md:grid-cols-2">
         
        <ProductImg product = {product} />
        <ProductItem product = {product} />
 
         
       </div>
-      
     </section>
     )
 }
