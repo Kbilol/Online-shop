@@ -1,6 +1,10 @@
+import { ProductTape } from "@product/index";
+
 export default function ProductPage(){
     return(
-        <h2>Hello world </h2>
+       <section className ="flex justify-center items-center gap-3 py-2">
+        <ProductTape/>
+       </section>
     )
 } 
   
