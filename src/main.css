@@ -1,2 +1,7 @@
 @import "tailwindcss";
 @import "flowbite";
+
+
+body {
+    background-color: rgb(36, 39, 39);
+}

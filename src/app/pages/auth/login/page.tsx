@@ -1,7 +1,7 @@
 
-import { Button } from "@common/ui/Button";
-import { Input } from "@common/ui/Input";
+import { LoginForm } from "@auth/index";
 import { Logo } from "@common/ui/Logo";
+
 
 
 
@@ -9,15 +9,10 @@ import { Logo } from "@common/ui/Logo";
 export default function LoginPage() {
     return (
         <section className="flex justify-center items-center gap-3 py-2 w-full">
-            <div>
+            <div className="flex flex-row gap-3 bg-white rounded-2xl shadow-md p-5 items-center">
                 <Logo />
+                <LoginForm />
             </div>
-            <form className="flex flex-col gap-3">
-                <h2 className="">Вход</h2>
-                <Input placeholder="Email" />
-                <Input placeholder="Password" />
-                <Button variant="primary">Войти</Button>
-            </form>
         </section>
     )
 }
