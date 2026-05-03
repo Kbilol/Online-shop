@@ -14,6 +14,8 @@ import Discount from "../pages/discount/page";
 import Contact from "../pages/contact/page";
 import { Layout } from "@common/widgets/Layout";
 import ProductPage from "@app/pages/product/[id]/page";
+import LoginPage from "@app/pages/auth/login/page";
+import RegisterPage from "@app/pages/auth/register/page";
 
 
 
@@ -51,6 +53,18 @@ export const router = createBrowserRouter([
       {
         path:"/product/:id/details",
         Component: ProductDetails,
+      },
+      {
+        path:"/auth/login",
+        Component:LoginPage
+      },
+      {
+        path:"/auth/register",
+        Component:RegisterPage
+      },
+      {
+        path:"/auth/login",
+        Component:LoginPage,
       }
     ]
   },

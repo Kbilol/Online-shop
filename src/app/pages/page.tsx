@@ -1,4 +1,3 @@
-
 import { CarouselApp } from "@common/widgets/CarouselApp"
 import { Intro } from "@common/widgets/Intro"
 import { ProductTape } from "@product/index"

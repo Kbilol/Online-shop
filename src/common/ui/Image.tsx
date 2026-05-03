@@ -1,17 +1,19 @@
 
 
-interface IImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {}
-
-export const Image: React.FC<IImageProps> = ({ className, ...props}) => {
-    const base =""
 
 
+export const Image: React.FC<
+React.ImgHTMLAttributes<HTMLImageElement>
+> = ({ className, ...props}) => {
+    const base ="object-cover";
+    const css = `${base} ${base} ${className}`;
 
-    const css = `${base} ${className}`;
-    <img 
-    loading="lazy"
-    decoding="async"
-    className={css}
-    { ...props}
+    return(
+     <img 
+        loading="lazy"
+        decoding="async"
+        className={css}
+         { ...props}
     />
+    )
 }
