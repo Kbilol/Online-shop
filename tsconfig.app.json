@@ -23,27 +23,20 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
 
-    "baseUrl":".",
-    "paths":{
-    "@app/*":["src/app/*"],
-    "@common/*":["src/common/*"],
-    "@core/*":["src/core/*"],
+    "baseUrl": ".",
+    "paths": {
+      "@app/*": ["src/app/*"],
+      "@common/*": ["src/common/*"],
+      "@core/*": ["src/core/*"],
 
-    "@auth/*":["src/modules/auth/*"],
-    "@basket/*":["src/modules/basket/*"],
-    "@product/*":["src/modules/product/*"],
-    "@category/*":["src/modules/category/*"],
-    "@user/*":["src/modules/user/*"],
-
+      "@auth/*": ["src/modules/auth/*"],
+      "@basket/*": ["src/modules/basket/*"],
+      "@product/*": ["src/modules/product/*"],
+      "@category/*": ["src/modules/category/*"],
+      "@user/*": ["src/modules/user/*"],
+      "@theme/*": ["src/modules/theme/*"],
+    },
   },
 
-  
-
-
-  },
-  
-
-
-
-  "include": ["src"]
+  "include": ["src"],
 }

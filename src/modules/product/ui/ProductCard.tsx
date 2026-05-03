@@ -1,7 +1,6 @@
-
 import { Link } from "@common/ui/Link";
 import type { ProductEntity } from "../entity/product.entity";
-
+import { Card, CardBody, CardFooter, CardHeader } from "@common/ui/card";
 
 interface IProductCardProps {
   product: ProductEntity;
@@ -12,13 +11,15 @@ export const ProductCard: React.FC<IProductCardProps> = ({ product }) => {
   const urlDetails = `/product/${product.id}/details`;
 
   return (
-    <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
-      <img
-        src={product.image}
-        alt={product.title}
-        className="h-48 w-full object-cover rounded-t-2xl"
-      />
-      <div className="p-4">
+    <Card>
+      <CardHeader>
+        <img
+          src={product.image}
+          alt={product.title}
+          className="h-48 w-full object-cover rounded-t-2xl"
+        />
+      </CardHeader>
+      <CardBody>
         <h3 className="text-lg font-semibold text-gray-800 truncate">
           {product.title}
         </h3>
@@ -29,11 +30,15 @@ export const ProductCard: React.FC<IProductCardProps> = ({ product }) => {
           <p className="text-pink-500 font-bold">${product.price}</p>
           <span className="text-yellow-500 text-sm">⭐ {product.rating}</span>
         </div>
-      </div>
-      <div className="flex justify-center items-center gap-3 p-3">
-    <Link variant="second" to = {urlBuy} >Купить</Link>
-    <Link variant="fourth" to = {urlDetails}>Подробней</Link>
-      </div>
-    </div>
+      </CardBody>
+      <CardFooter>
+        <Link variant="second" to={urlBuy}>
+          Купить
+        </Link>
+        <Link variant="fourth" to={urlDetails}>
+          Подробней
+        </Link>
+      </CardFooter>
+    </Card>
   );
 };

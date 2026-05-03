@@ -1,33 +1,28 @@
-
-
- 
-interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
-    variant:"primary" | "second" | "warning" | "fourth" ;
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  variant: "primary" | "second" | "warning" | "fourth";
 }
 
+export const Button: React.FC<ButtonProps> = ({
+  variant,
+  children,
+  ...props
+}) => {
+  const base =
+    "text-[var(--button-text)] font-bold py-2 px-4 rounded-lg transition-all hover:cursor-pointer";
 
-export const Button: React.FC<ButtonProps> = ({variant,children, ...props }) => {
+  const variants = {
+    primary: "bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)]",
 
-    const base = "text-white font-bold py-2 px-4 rounded-lg transition-all hover:cursor-pointer";
+    second: "bg-[var(--color-second)] hover:bg-[var(--color-second-hover)]",
 
-    const variants = {
-        primary:"bg-blue-500 hover:bg-blue-600",
-        second:"bg-gray-500 hover:bg-gray-600",
-        warning:"bg-yellow-500 hover:bg-yellow-600",
-        fourth:"bg-pink-500 hover:bg-pink-600",
-    };
+    warning: "bg-[var(--color-warning)] hover:bg-[var(--color-warning-hover)]",
 
-    const className = `${base} ${variants[variant]}`;
-    return(
-        <button
-            className={className}
-            {...props}
-            >
-              {children}
-        </button>
-    )
- }
+    fourth: "bg-[var(--color-fourth)] hover:bg-[var(--color-fourth-hover)]",
+  };
 
-
-
- 
+  return (
+    <button className={`${base} ${variants[variant]}`} {...props}>
+      {children}
+    </button>
+  );
+};

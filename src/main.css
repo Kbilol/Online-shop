@@ -1,1 +1,105 @@
 @import "tailwindcss";
+
+:root {
+    /* ===== Base (общие) ===== */
+    --radius: 12px;
+    --transition: all 0.2s ease;
+
+    /* ===== TEXT ===== */
+    --color-text-primary: #111827;
+    --color-text-secondary: #6b7280;
+    --color-placeholder: #9ca3af;
+
+    /* ===== BACKGROUND ===== */
+    --color-bg-main: #f9fafb;
+    --color-bg-secondary: #ffffff;
+
+    /* ===== BORDER ===== */
+    --color-border: #e5e7eb;
+
+    /* ===== PRIMARY ===== */
+    --color-primary: #3b82f6;
+    --color-primary-hover: #2563eb;
+    --color-primary-light: rgba(59, 130, 246, 0.1);
+    --color-primary-ring: #60a5fa;
+
+    /* ===== SECOND ===== */
+    --color-second: #6b7280;
+    --color-second-hover: #4b5563;
+    --color-second-light: rgba(107, 114, 128, 0.1);
+    --color-second-ring: #9ca3af;
+
+    /* ===== WARNING ===== */
+    --color-warning: #eab308;
+    --color-warning-hover: #ca8a04;
+    --color-warning-light: rgba(234, 179, 8, 0.1);
+    --color-warning-ring: #facc15;
+
+    /* ===== FOURTH ===== */
+    --color-fourth: #ec4899;
+    --color-fourth-hover: #db2777;
+    --color-fourth-light: rgba(236, 72, 153, 0.1);
+    --color-fourth-ring: #f472b6;
+
+    /* ===== UI BLOCKS ===== */
+    --color-navbar-bg: #ffffff;
+    --color-sidebar-bg: #ffffff;
+    --color-card-bg: #ffffff;
+
+    --color-navbar-border: #e5e7eb;
+    --color-sidebar-border: #e5e7eb;
+    --color-card-border: #e5e7eb;
+}
+
+:root[data-theme="dark"] {
+    /* TEXT */
+    --color-text-primary: #f9fafb;
+    --color-text-secondary: #9ca3af;
+    --color-placeholder: #6b7280;
+
+    /* BACKGROUND */
+    --color-bg-main: #0f172a;
+    --color-bg-secondary: #111827;
+
+    /* BORDER */
+    --color-border: #1f2933;
+
+    /* PRIMARY */
+    --color-primary: #3b82f6;
+    --color-primary-hover: #60a5fa;
+    --color-primary-light: rgba(59, 130, 246, 0.15);
+    --color-primary-ring: #93c5fd;
+
+    /* SECOND */
+    --color-second: #6b7280;
+    --color-second-hover: #9ca3af;
+    --color-second-light: rgba(107, 114, 128, 0.15);
+    --color-second-ring: #d1d5db;
+
+    /* WARNING */
+    --color-warning: #eab308;
+    --color-warning-hover: #facc15;
+    --color-warning-light: rgba(234, 179, 8, 0.15);
+    --color-warning-ring: #fde047;
+
+    /* FOURTH */
+    --color-fourth: #ec4899;
+    --color-fourth-hover: #f472b6;
+    --color-fourth-light: rgba(236, 72, 153, 0.15);
+    --color-fourth-ring: #f9a8d4;
+
+    /* UI BLOCKS */
+    --color-navbar-bg: #111827;
+    --color-sidebar-bg: #0f172a;
+    --color-card-bg: #111827;
+
+    --color-navbar-border: #1f2937;
+    --color-sidebar-border: #1f2937;
+    --color-card-border: #1f2937;
+}
+
+body {
+    background-color: var(--color-bg-main);
+    color: var(--color-text-primary);
+    transition: var(--transition);
+}
