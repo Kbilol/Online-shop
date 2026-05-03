@@ -1,7 +1,7 @@
 import { Navbar, NavbarBrand, NavbarCollapse, NavbarToggle } from "flowbite-react";
 import { configLink } from "@core/config.core";
 import { Link } from "@common/ui/Link";
-import { Button } from "@common/ui/Button";
+
 
 
 
@@ -22,7 +22,7 @@ export const NavbarApp:React.FC = () => {
         <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Online shop</span>
       </NavbarBrand>
       <div className="flex md:order-2 gap-3">
-        <Button variant="primary">Войти</Button>
+        <Link to={"/auth/login"} variant="fourth">Войти</Link>
         <NavbarToggle />
       </div>
       <NavbarCollapse>

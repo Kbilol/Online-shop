@@ -5,7 +5,6 @@ import "./main.css"
 import "flowbite";
 import "flowbite/dist/flowbite.css";
 
-
 import { AppRouter } from './app/router/AppRouter.tsx'
 
 createRoot(document.getElementById('root')!).render(

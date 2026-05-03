@@ -31,8 +31,8 @@ export const ProductCard: React.FC<IProductCardProps> = ({ product }) => {
         </div>
       </div>
       <div className="flex justify-center items-center gap-3 p-3">
-        <Link variant="second" to = {urlBuy} >Купить</Link>
-        <Link variant="fourth" to = {urlDetails}>Подробней</Link>
+    <Link variant="second" to = {urlBuy} >Купить</Link>
+    <Link variant="fourth" to = {urlDetails}>Подробней</Link>
       </div>
     </div>
   );

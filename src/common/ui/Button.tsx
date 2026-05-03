@@ -20,7 +20,7 @@ export const Button: React.FC<ButtonProps> = ({variant,children, ...props }) => 
     const className = `${base} ${variants[variant]}`;
     return(
         <button
-        className={className}
+            className={className}
             {...props}
             >
               {children}
