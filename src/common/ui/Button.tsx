@@ -35,7 +35,7 @@ export const Button: React.FC<ButtonProps> = ({
       
       <div className="absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-300 bg-white/10" />
 
-      
+
       <div className="absolute -top-10 -left-10 w-20 h-20 bg-white/20 rounded-full blur-2xl" />
     </button>
   );
