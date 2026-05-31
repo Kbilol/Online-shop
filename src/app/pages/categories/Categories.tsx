@@ -1,39 +1,39 @@
 const categories = [
   {
     id: 1,
-    name: "Смартфоны",
+    name: "Хорошом состояние хлеб",
     image:
-      "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
+      "https://cs.pikabu.ru/post_img/2013/04/26/7/1366967439_242656108.jpg",
   },
   {
     id: 2,
-    name: "Ноутбуки",
+    name: "Ноутбуки Хакеров",
     image:
-      "https://images.unsplash.com/photo-1496181133206-80ce9b88a853",
+      "https://www.meme-arsenal.com/memes/6eca5c6d11f4dfdd0cda8ebeea7b2817.jpg",
   },
   {
     id: 3,
     name: "Наушники",
     image:
-      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e",
+      "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/432b1d40-884e-46dd-b459-62317a227b43/dlr0nyz-b956754e-3cf5-4510-8208-fbbb87d90f20.jpg/v1/fill/w_828,h_485,q_75,strp/angry_bird_ear_by_htlmxs_dlr0nyz-fullview.jpg",
   },
   {
     id: 4,
-    name: "Часы",
+    name: "Нокия 18",
     image:
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
+      "https://preview.redd.it/y78y553bdwn71.jpg?width=640&crop=smart&auto=webp&s=6628e39159f188076dfdc5c7da0ac12284b9bbbf",
   },
   {
     id: 5,
-    name: "Клавиатуры",
+    name: "Тигр",
     image:
-      "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStwjg5UtRge_buRXOtqzLFUOJJhyFD6lHrjQ&s",
   },
   {
     id: 6,
-    name: "Мониторы",
+    name: "Монитор хорошом состояние",
     image:
-      "https://images.unsplash.com/photo-1527443154391-507e9dc6c5cc",
+      "https://abrakadabra.fun/uploads/posts/2022-01/1643090591_4-abrakadabra-fun-p-slomal-monitor-12.jpg",
   },
 ];
 

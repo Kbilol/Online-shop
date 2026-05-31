@@ -7,7 +7,7 @@ export const configLink = {
             link:'/'
         },
         {
-            name:'о нас',
+            name:'Категория',
             link:'/about'
         },
         {
