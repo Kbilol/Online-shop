@@ -1,8 +1,10 @@
+import { Category } from "../category/Category";
 
 
 
 export default function About () {
     return(
-        <h2>it`s about page</h2>
+        
+        <Category/>
     )
 }
