@@ -19,7 +19,10 @@ export const NavbarApp: React.FC = () => {
     });
   };
   return (
-    <Navbar fluid>
+    <Navbar
+      fluid
+      className="fixed w-full z-1    transition-all duration-300  opacity-95 bg-white/35 dark:bg-black/35 backdrop-blur-2xl backdrop-saturate-180 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.12)] dark:shadow-[0_12px_40px_-8px_rgba(0,0,0,0.6)]"
+    >
       <NavbarBrand href="https://flowbite-react.com">
         <img
           src="/Logos.jpg"

@@ -1,7 +1,5 @@
+import { ProductTape } from "@product/index";
 
-
-export default function Discount () {
-    return(
-        <h2>it`s about discount</h2>
-    )
+export default function Discount() {
+  return <ProductTape filter={{ isDiscount: true }} />;
 }
