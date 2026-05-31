@@ -1,10 +1,11 @@
-import { Category } from "../categories/Categories";
 
 
 
-export default function About () {
+
+
+export default function About() {
     return(
         
-        <Category/>
+        <h2>it's about</h2>
     )
 }

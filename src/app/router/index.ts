@@ -16,6 +16,7 @@ import { Layout } from "@common/widgets/Layout";
 import ProductPage from "@app/pages/product/[id]/page";
 import LoginPage from "@app/pages/auth/login/page";
 import RegisterPage from "@app/pages/auth/register/page";
+import { Category } from "@app/pages/categories/Categories";
 
 
 
@@ -41,6 +42,10 @@ export const router = createBrowserRouter([
       {
         path: "/contact",
         Component: Contact,
+      },
+      {
+        path:"/categories",
+        Component:Category,
       },
       {
         path: "/product",

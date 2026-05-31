@@ -7,7 +7,7 @@ export const configLink = {
             link:'/'
         },
         {
-            name:'Категория',
+            name:'о нас',
             link:'/about'
         },
         {
@@ -21,6 +21,10 @@ export const configLink = {
         {
             name:'Контакты',
             link:'/contact'
+        },
+        {
+            name:'Категория',
+            link:'/categories'
         }
     ]
 }
