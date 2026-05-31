@@ -21,6 +21,10 @@ export const configLink = {
         {
             name:'Контакты',
             link:'/contact'
+        },
+        {
+            name:'Категория',
+            link:'/categories'
         }
     ]
 }
