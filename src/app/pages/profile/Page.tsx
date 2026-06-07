@@ -1,3 +1,4 @@
+import { Button } from "@common/ui/Button";
 import React from "react";
 
 const ProfilePage: React.FC = () => {
@@ -22,22 +23,9 @@ const ProfilePage: React.FC = () => {
 
           <p className="text-gray-500 mt-1">{user.email}</p>
 
-          <button
-            className="
-              mt-6
-              px-6
-              py-2
-              bg-blue-500
-              text-white
-              rounded-lg
-              font-medium
-              transition-all
-              hover:bg-blue-600
-              hover:scale-105
-            "
-          >
+          <Button variant="primary">
             Редактировать профиль
-          </button>
+          </Button>
         </div>
 
         <div className="mt-8 border-t pt-6">
