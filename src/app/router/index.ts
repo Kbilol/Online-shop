@@ -17,7 +17,7 @@ import ProductPage from "@app/pages/product/[id]/page";
 import LoginPage from "@app/pages/auth/login/page";
 import RegisterPage from "@app/pages/auth/register/page";
 import { Category } from "@app/pages/categories/Categories";
-import Profile from "@app/pages/profile/Page";
+
 import ProfilePage from "@app/pages/profile/Page";
 
 

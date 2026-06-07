@@ -7,7 +7,7 @@ import {
 import { configLink } from "@core/config.core";
 import { Link } from "@common/ui/Link";
 import { ToggleTheme } from "@theme/index";
-import { Navigate } from "react-router-dom";
+
 import { Button } from "@common/ui/Button";
 
 export const NavbarApp: React.FC = () => {

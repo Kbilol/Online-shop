@@ -1,4 +1,4 @@
-import { colors } from "flowbite-react/plugin/tailwindcss/colors";
+
 
 
 
