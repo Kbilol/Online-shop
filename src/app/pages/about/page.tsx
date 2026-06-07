@@ -1,4 +1,3 @@
-
 import { ShoppingBag, ShieldCheck, Truck, Users } from "lucide-react"; // Используем иконки для наглядности
 import { Button } from "@common/ui/Button";
 

@@ -1,9 +1,4 @@
-
-
-
 import type { ProductEntity } from "../entity/product.entity";
-
-
 
 export const products: ProductEntity[] = [
     {

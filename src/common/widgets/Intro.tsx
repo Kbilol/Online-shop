@@ -11,22 +11,24 @@ export const Intro: React.FC = () => {
         alt="Intro"
         className="w-[400px] rounded-2xl shadow-md hover:scale-105 transition-transform duration-500"
       />
-      
+
       <div className="flex flex-col gap-6 text-gray-700 max-w-xl">
         <Title variant="secondary" size="lg">
-           У нас вы найдёте всё необходимое <br /> 
+          У нас вы найдёте всё необходимое <br />
           для себя и своих близких.
         </Title>
 
-        <Text variant ="secondary" size="lg">
-          Мы предлагаем <span className="text-pink-500 font-semibold">качественные товары</span> по доступным ценам, 
-          быструю доставку и удобный сервис. Каждый покупатель для нас важен, 
-          поэтому мы заботимся о том, чтобы ваши покупки были лёгкими и приятными.
+        <Text variant="secondary" size="lg">
+          Мы предлагаем{" "}
+          <span className="text-pink-500 font-semibold">
+            качественные товары
+          </span>{" "}
+          по доступным ценам, быструю доставку и удобный сервис. Каждый
+          покупатель для нас важен, поэтому мы заботимся о том, чтобы ваши
+          покупки были лёгкими и приятными.
         </Text>
-        
-        <Button variant="fourth">
-          Перейти к покупкам
-        </Button>
+
+        <Button variant="fourth">Перейти к покупкам</Button>
       </div>
     </section>
   );

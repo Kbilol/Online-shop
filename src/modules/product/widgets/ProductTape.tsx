@@ -1,5 +1,5 @@
-import { products } from "../data/product.data"
-import { ProductCard } from "../ui/ProductCard"
+import { products } from "../data/product.data";
+import { ProductCard } from "../ui/ProductCard";
 
 interface IProductFilter {
     isDiscount?:boolean

@@ -1,9 +1,11 @@
-
-
 import { SendIcon, Mail, Phone, MapPin, CodeIcon } from "lucide-react";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
+
+
+
+ 
 
   const navigationLinks = [
     { title: "Главная", href: "#" },
