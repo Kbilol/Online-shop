@@ -1,3 +1,5 @@
+import { ListCategories } from "@category/widgets/list-categories";
+
 const categories = [
   {
     id: 1,
@@ -41,6 +43,7 @@ export const Category = () => {
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="mb-8 text-3xl font-bold">Категории товаров</h1>
+      <ListCategories />
 
       <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
         {categories.map((category) => (
@@ -55,9 +58,7 @@ export const Category = () => {
             />
 
             <div className="p-4">
-              <h2 className="text-lg font-semibold">
-                {category.name}
-              </h2>
+              <h2 className="text-lg font-semibold">{category.name}</h2>
             </div>
           </div>
         ))}
