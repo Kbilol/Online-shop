@@ -7,4 +7,5 @@ export interface ProductEntity{
     price:number;
     rating:number;
     image:string;
+    discount:boolean;
 }

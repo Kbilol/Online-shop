@@ -5,7 +5,7 @@ import { Title } from "@common/ui/Title";
 
 export const Intro: React.FC = () => {
   return (
-    <section className="flex justify-center items-center gap-10 px-6 py-12 bg-gradient-to-r from-pink-100 via-white to-pink-50 rounded-2xl shadow-lg max-w-6xl mx-auto">
+    <section className="flex mt-10 justify-center items-center gap-10 px-6 py-12 bg-gradient-to-r from-pink-100 via-white to-pink-50 rounded-2xl shadow-lg max-w-6xl mx-auto">
       <Image
         src="/Intro.jpg"
         alt="Intro"

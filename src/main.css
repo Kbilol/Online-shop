@@ -1,5 +1,59 @@
 @import "tailwindcss";
 
+@theme {
+    /* Базовые настройки */
+    --radius-custom: var(--radius);
+    --transition-custom: var(--transition);
+
+    /* Цвета текста */
+    --color-text-primary: var(--color-text-primary);
+    --color-text-secondary: var(--color-text-secondary);
+    --color-placeholder: var(--color-placeholder);
+
+    /* Цвета фона */
+    --color-bg-main: var(--color-bg-main);
+    --color-bg-secondary: var(--color-bg-secondary);
+
+    /* Границы */
+    --color-border-main: var(--color-border);
+
+    /* Основной цвет (Primary) */
+    --color-primary: var(--color-primary);
+    --color-primary-hover: var(--color-primary-hover);
+    --color-primary-light: var(--color-primary-light);
+    --color-primary-ring: var(--color-primary-ring);
+
+    /* Вторичный цвет (Second) */
+    --color-second: var(--color-second);
+    --color-second-hover: var(--color-second-hover);
+    --color-second-light: var(--color-second-light);
+    --color-second-ring: var(--color-second-ring);
+
+    /* Предупреждения (Warning) */
+    --color-warning: var(--color-warning);
+    --color-warning-hover: var(--color-warning-hover);
+    --color-warning-light: var(--color-warning-light);
+    --color-warning-ring: var(--color-warning-ring);
+
+    /* Акцентный цвет (Fourth) */
+    --color-fourth: var(--color-fourth);
+    --color-fourth-hover: var(--color-fourth-hover);
+    --color-fourth-light: var(--color-fourth-light);
+    --color-fourth-ring: var(--color-fourth-ring);
+
+    /* Блоки интерфейса (UI Blocks) */
+    --color-navbar-bg: var(--color-navbar-bg);
+    --color-sidebar-bg: var(--color-sidebar-bg);
+    --color-card-bg: var(--color-card-bg);
+
+    --color-navbar-border: var(--color-navbar-border);
+    --color-sidebar-border: var(--color-sidebar-border);
+    --color-card-border: var(--color-card-border);
+}
+
+/* ==========================================================================
+   2. ЗНАЧЕНИЯ ПЕРЕМЕННЫХ (Светлая тема по умолчанию)
+   ========================================================================== */
 :root {
     /* ===== Base (общие) ===== */
     --radius: 12px;
@@ -18,10 +72,10 @@
     --color-border: #e5e7eb;
 
     /* ===== PRIMARY ===== */
-    --color-primary: #3b82f6;
-    --color-primary-hover: #2563eb;
+    --color-primary: #fa1eef;
+    --color-primary-hover: #cf19c5;
     --color-primary-light: rgba(59, 130, 246, 0.1);
-    --color-primary-ring: #60a5fa;
+    --color-primary-ring: #f241e9;
 
     /* ===== SECOND ===== */
     --color-second: #6b7280;
@@ -51,6 +105,9 @@
     --color-card-border: #e5e7eb;
 }
 
+/* ==========================================================================
+   3. ЗНАЧЕНИЯ ПЕРЕМЕННЫХ (Темная тема)
+   ========================================================================== */
 :root[data-theme="dark"] {
     /* TEXT */
     --color-text-primary: #f9fafb;
@@ -69,7 +126,6 @@
     --color-primary-hover: #60a5fa;
     --color-primary-light: rgba(59, 130, 246, 0.15);
     --color-primary-ring: #93c5fd;
-
     /* SECOND */
     --color-second: #6b7280;
     --color-second-hover: #9ca3af;
@@ -98,6 +154,9 @@
     --color-card-border: #1f2937;
 }
 
+/* ==========================================================================
+   4. БАЗОВЫЕ СТИЛИ ДЛЯ СТРАНИЦЫ
+   ========================================================================== */
 body {
     background-color: var(--color-bg-main);
     color: var(--color-text-primary);
