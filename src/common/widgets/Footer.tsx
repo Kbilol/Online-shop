@@ -3,6 +3,10 @@ import { SendIcon, Mail, Phone, MapPin, CodeIcon } from "lucide-react";
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
+
+
+ 
+
   const navigationLinks = [
     { title: "Главная", href: "#" },
     { title: "О нас", href: "#" },
@@ -88,7 +92,6 @@ export const Footer = () => {
                 ))}
               </ul>
             </div>
-
             {/* Контакты (занимает 2 колонки на мобильных, если не помещается) */}
             <div className="col-span-2 md:col-span-1 mt-8 md:mt-0">
               <h3 className="text-sm font-semibold uppercase tracking-wider text-white">

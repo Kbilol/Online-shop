@@ -1,9 +1,11 @@
-export interface ProductEntity {
-  id: number;
-  title: string;
-  description: string;
-  price: number;
-  rating: number;
-  image: string;
-  discount: boolean;
+
+
+export interface ProductEntity{
+    id:number;
+    title:string;
+    description:string;
+    price:number;
+    rating:number;
+    image:string;
+    discount:boolean;
 }

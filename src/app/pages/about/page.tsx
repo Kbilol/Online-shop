@@ -1,6 +1,6 @@
 import { ShoppingBag, ShieldCheck, Truck, Users } from "lucide-react"; // Используем иконки для наглядности
-
 import { Button } from "@common/ui/Button";
+
 
 const AboutPage = () => {
   const stats = [
@@ -18,19 +18,19 @@ const AboutPage = () => {
         "Мы тщательно отбираем поставщиков и контролируем качество каждой единицы товара перед отправкой.",
     },
     {
-      icon: <ShieldCheck className="w-6 h-6 text-primary" />,
+      icon: <ShieldCheck className={`w-6 h-6 text-primary`} />,
       title: "Безопасность покупок",
       description:
         "Все платежи защищены современными протоколами шифрования. 100% гарантия возврата средств.",
     },
     {
-      icon: <Truck className="w-6 h-6 text-primary" />,
+      icon: <Truck className={`w-6 h-6 text-primary`} />,
       title: "Быстрая доставка",
       description:
         "Доставляем заказы в кратчайшие сроки благодаря собственной логистике и надежным партнерам.",
     },
     {
-      icon: <Users className="w-6 h-6 text-primary" />,
+      icon: <Users className={`w-6 h-6 text-primary `}/>,
       title: "Поддержка 24/7",
       description:
         "Наша команда заботы о клиентах всегда на связи, чтобы помочь вам с любым вопросом.",
@@ -40,7 +40,7 @@ const AboutPage = () => {
   return (
     <div className="bg-white text-gray-800 min-h-screen">
       {/* 1. Hero Секция */}
-      <section className="relative bg-gradient-to-r from-primary to-slate-900 text-white py-20 px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-gradient-to-r from-indigo-900 to-slate-900 text-white py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight mb-6">
             О нашем интернет-магазине
@@ -80,7 +80,7 @@ const AboutPage = () => {
                 key={index}
                 className="text-center p-4 bg-white rounded-xl shadow-sm"
               >
-                <p className="text-3xl sm:text-4xl font-extrabold text-primary mb-1">
+                <p className="text-3xl sm:text-4xl font-extrabold text-indigo-600 mb-1">
                   {stat.value}
                 </p>
                 <p className="text-sm font-medium text-gray-500">
@@ -93,7 +93,6 @@ const AboutPage = () => {
       </section>
 
       <hr className="border-gray-200 max-w-7xl mx-auto" />
-
       {/* 3. Преимущества / Ценности */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -137,6 +136,7 @@ const AboutPage = () => {
             товаров с гарантией качества.
           </p>
           <Button variant="primary">Перейти в каталог</Button>
+    
         </div>
       </section>
     </div>
