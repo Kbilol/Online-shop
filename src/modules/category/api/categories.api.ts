@@ -1,9 +1,10 @@
 import type { Category } from "@category/entities/category.entity";
 import { httpClient } from "@common/api/client";
 import { useQuery } from "@tanstack/react-query";
+import type { ApiResponse } from "@common/api/types";
 
-async function fetchCategories(): Promise<Category[]> {
-  const response = await httpClient.get<Category[]>("/categories");
+async function fetchCategories(): Promise<ApiResponse<Category[]>> {
+  const response = await httpClient.get<ApiResponse<Category[]>>("/categories");
   return response.data;
 }
 
@@ -13,5 +14,5 @@ export function useCategories() {
     queryFn: async () => await fetchCategories(),
   });
 
-  return { data, error, isLoading };
+  return { categories: data, error, isLoading };
 }
