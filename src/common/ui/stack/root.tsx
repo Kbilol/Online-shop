@@ -2,7 +2,6 @@ import React from "react";
 import { ALIGN_MAP, GAP_MAP, JUSTIFY_MAP } from "./variants";
 import { cn } from "@common/libs/cn";
 
-
 type StackProps<T extends React.ElementType> = {
   as?: T;
   gap?: keyof typeof GAP_MAP;
@@ -20,8 +19,6 @@ export const Stack = <T extends React.ElementType = "div">({
   children,
   ...props
 }: StackProps<T>) => {
- 
-  
   const Component = as || "div";
 
   return (
