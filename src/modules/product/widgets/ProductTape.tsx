@@ -1,3 +1,5 @@
+
+import { Grid } from "@common/ui/grid";
 import { products } from "../data/product.data";
 import { ProductCard } from "../ui/ProductCard";
 
@@ -14,13 +16,13 @@ export const ProductTape: React.FC<IProductTapeProps> = ({filter}) => {
     ? products.filter(product => product.discount)
     :products
     return(
-        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {
-                filteredProduct.map(
-                    product =>
-                    <ProductCard key={product.id} product={product} />
-                )
-            }
-        </section>
+        // <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <Grid cols={3} as="section" md={2} lg={3} gap={4}>
+                {filteredProduct.map((product) => (
+                        <ProductCard key={product.id} product={product} />
+                ))}
+            </Grid>
+            
+        // </section>
     )
 }

@@ -2,8 +2,13 @@ import { Button } from "@common/ui/Button";
 import { Image } from "@common/ui/Image";
 import { Text } from "@common/ui/Text";
 import { Title } from "@common/ui/Title";
+import { useTranslate } from "@i18n/use-translate";
+import { useTranslation } from "react-i18next";
 
 export const Intro: React.FC = () => {
+  const { t, i18n } = useTranslation("product"); 
+
+
   return (
     <section className="flex mt-10 justify-center items-center gap-10 px-6 py-12 bg-gradient-to-r from-pink-100 via-white to-pink-50 rounded-2xl shadow-lg max-w-6xl mx-auto">
       <Image
@@ -11,6 +16,9 @@ export const Intro: React.FC = () => {
         alt="Intro"
         className="w-[400px] rounded-2xl shadow-md hover:scale-105 transition-transform duration-500"
       />
+            <h1 className="color-black">{t( "Welcome" )} </h1>
+            <h2 className="color-black">{t( "productTitle" )} </h2>
+            <p>{t("product.description")}</p>
 
       <div className="flex flex-col gap-6 text-gray-700 max-w-xl">
         <Title variant="secondary" size="lg">

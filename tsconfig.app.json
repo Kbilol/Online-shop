@@ -28,6 +28,7 @@
       "@app/*": ["src/app/*"],
       "@common/*": ["src/common/*"],
       "@core/*": ["src/core/*"],
+      "@i18n/*": ["src/i18n/*"],
 
       "@auth/*": ["src/modules/auth/*"],
       "@basket/*": ["src/modules/basket/*"],
