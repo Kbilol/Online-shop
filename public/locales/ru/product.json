@@ -1,0 +1,13 @@
+     {
+      "Welcome": "Добро пожаловать в React и react-i18next",
+      "productTitle": "Название",
+      "description": "Описание товара",
+      "buy": "Купить",
+      "details": "Подробности",
+      "products": {
+      "iphone": {
+      "title": "iPhone 16",
+      "description": "Последный версия Iphone"
+      }
+  }
+    }

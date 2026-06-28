@@ -1,0 +1,14 @@
+
+    {
+      "Welcome": "Xush kelinsiz",
+      "productTitle": "Mahsulotni Nomi",
+      "description": "Mahsulot tavsifi",
+      "buy": "Sotib olish",
+      "details": "Tafsilotlar",
+      "products": {
+      "iphone": {
+      "title": "iPhone 16",
+      "description": "IPhone eng so'nggi versiyasi"
+    }
+  }
+}

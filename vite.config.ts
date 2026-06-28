@@ -14,6 +14,8 @@ export default defineConfig({
       "@common": fileURLToPath(new URL("./src/common", import.meta.url)),
       "@app": fileURLToPath(new URL("./src/app", import.meta.url)),
 
+      "@i18n": fileURLToPath(new URL("./src/i18n", import.meta.url)),
+
       "@auth": fileURLToPath(new URL("./src/modules/auth", import.meta.url)),
       "@basket": fileURLToPath(
         new URL("./src/modules/basket", import.meta.url),
